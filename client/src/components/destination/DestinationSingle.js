@@ -75,7 +75,7 @@ const DestinationIndex = () => {
       // console.log(process.env.REACT_APP_API_KEY)
       if (!destination) return
       try {
-        mapboxgl.accessToken = 'pk.eyJ1IjoiamFtZXNndWxsYW5kIiwiYSI6ImNsZnM1dTBsbzAzNGczcW1ocThldWt5bDkifQ.W8F3EzE7Ap170SOD3_VRDg'
+        mapboxgl.accessToken = process.env.REACT_APP_API_KEY
         const map = new mapboxgl.Map({
           container: 'map',
           style: 'mapbox://styles/mapbox/streets-v12',
