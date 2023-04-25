@@ -72,10 +72,10 @@ const DestinationIndex = () => {
   // ! Get Map
   useEffect(() => {
     const getMap = async () => {
-      console.log(process.env.REACT_APP_API_KEY)
+      // console.log(process.env.REACT_APP_API_KEY)
       if (!destination) return
       try {
-        mapboxgl.accessToken = process.env.REACT_APP_API_KEY
+        mapboxgl.accessToken = 'pk.eyJ1IjoiamFtZXNndWxsYW5kIiwiYSI6ImNsZnM1dTBsbzAzNGczcW1ocThldWt5bDkifQ.W8F3EzE7Ap170SOD3_VRDg'
         const map = new mapboxgl.Map({
           container: 'map',
           style: 'mapbox://styles/mapbox/streets-v12',
